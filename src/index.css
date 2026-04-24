@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", serif;
+  --color-brand-bg: #0a0a0b;
+  --color-brand-card: #0f0f12;
+  --color-brand-accent: #f59e0b;
+}
+
+@layer base {
+  html {
+    direction: rtl;
+    background-color: var(--color-brand-bg);
+    color: #cbd5e1; /* slate-300 */
+  }
+}
+
+.urdu-text {
+  font-family: var(--font-urdu), "Noto Sans Arabic", serif;
+  line-height: 1.8;
+}
+
+.bg-sophisticated-gradient {
+  background: radial-gradient(circle at top left, #16161a, #0a0a0b 70%, #0a0a0b);
+}
+
+.markdown-body {
+  direction: rtl;
+  text-align: right;
+}
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
